@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEATHER APP</title>
+    <script
+      src="https://kit.fontawesome.com/402654dea6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chela+One&family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <input type="text" placeholder="Search City" />
+        <button value="submit" id="search_btn">
+          <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div class="contentBox" hidden>
+        <div class="img_Conditions">
+          <div id="imgbox">
+            <img
+              src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3NtdTRwbHBkcXlibTYwaTI2NmZkMnducGs1bWlwY2UwZW1tazV1NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7bu3XilJ5BOiSGic/giphy.gif"
+              alt="loading....."
+              id="image"
+            />
+          </div>
+          <div>
+            <p id="temperature"></p>
+            <p id="Wcondition"></p>
+          </div>
+        </div>
+
+        <div class="weatherBody">
+          <span class="logo"><i class="fa-solid fa-droplet"></i></span>
+          <div id="humiditybox">
+            <span></span>
+            <p>Humidity</p>
+          </div>
+
+          <span class="logo"><i class="fa-solid fa-wind"></i></span>
+          <div id="windspeedbox">
+            <span></span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
